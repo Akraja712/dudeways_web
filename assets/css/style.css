@@ -149,7 +149,7 @@ body {
 }
 
 .section-heading h2 {
-  font-size: 28px;
+  font-size: 35px;
   font-weight: 800;
   color: #050404;
   text-transform: uppercase;
@@ -168,7 +168,7 @@ body {
 }
 
 .dark-bg h2 {
-  color: #fff;
+  color: #ffffff;
 }
 
 .dark-bg p {
@@ -637,6 +637,10 @@ features
 .feature-item .left-icon img {
   float: left;
   margin-right: 30px;
+}
+.feature-item .left-icon img {
+  max-width: 100px;
+  max-height:100px;
 }
 
 .feature-item .right-content {
