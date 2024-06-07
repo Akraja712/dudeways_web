@@ -236,6 +236,7 @@ header
   transition: all .5s ease 0s;
 }
 
+
 .header-area .main-nav {
   min-height: 80px;
   background: transparent;
@@ -243,7 +244,7 @@ header
 
 .header-area .main-nav .logo {
   line-height: 80px;
-  color: #fff;
+  color: #ffffff;
   font-size: 32px;
   font-weight: 800;
   text-transform: uppercase;
@@ -254,7 +255,36 @@ header
   transition: all 0.3s ease 0s;
 }
 
-.header-area .main-nav .logo em {
+.header-area .main-nav .text {
+  line-height: 80px;
+  color: #3b3838;
+  font-size: 32px;
+  font-weight: 800;
+  text-transform: uppercase;
+  float: left;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.header-area .main-nav .text1 {
+  line-height: 80px;
+  color: #fffdfd;
+  font-size: 32px;
+  font-weight: 800;
+  text-transform: uppercase;
+  float: left;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.header-area .main-nav .text1 em {
+  font-style: normal;
+  color: #fc5082;
+  font-weight: 900;
+}
+.header-area .main-nav .text em {
   font-style: normal;
   color: #fc5082;
   font-weight: 900;
@@ -453,7 +483,7 @@ header
     opacity: 1;
   }
   .header-area {
-    background-color: #f7f7f7;
+    background: rgba(250,250,250,0.1);
     padding: 0px 15px;
     height: 80px;
     box-shadow: none;
@@ -487,7 +517,7 @@ header
   .header-area .main-nav .nav li:last-child {
     width: 100%;
     background-color: #fc5082;
-    color: #fff;
+    color:#576067;
   }
 
   .header-area.header-sticky .nav {
@@ -509,7 +539,7 @@ header
     color: #232d39 !important;
   }
   .header-area .main-nav .nav li a:hover {
-    background: #eee !important;
+    background:#576067 !important;
     color: #fc5082!important;
   }
   .header-area .main-nav .nav li.submenu ul {
