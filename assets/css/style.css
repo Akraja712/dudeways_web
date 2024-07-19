@@ -745,7 +745,7 @@ Our Classes
 */
 
 #our-classes {
-  margin-bottom: 140px;
+  margin-bottom: 20px;
 }
 
 #tabs ul {
@@ -951,7 +951,7 @@ trainers
 */
 
 #trainers { 
-  padding-bottom: 90px; 
+  padding-bottom: -90px; 
 }
 
 #trainers .trainer-item {
