@@ -96,16 +96,16 @@ curl_close($curl);
 
     <!-- ***** Our Classes Start ***** -->
     <section class="section" id="our-classes">
-        <div class="container">
-            <div class="row">
-                <?php if (!empty($users)) : ?>
-                    <?php foreach ($users as $user) : ?>
-                        <div class="col-md-4">
-                            <div class="card mb-4" style="width: 22rem;">
+    <div class="container">
+        <div class="row">
+            <?php if (!empty($users)) : ?>
+                <?php foreach ($users as $user) : ?>
+                    <div class="col-md-4 mb-4">
+                        <div class="card" style="width: 100%;">
                                 <div class="d-flex align-items-center mb-3 logo-text-container">
                                     <img src="<?php echo htmlspecialchars($user['profile']); ?>" alt="Logo" class="card-logo">
                                     <div>
-                                        <span class="overlay-name"><?php echo htmlspecialchars($user['name']); ?></span>&nbsp;&nbsp; &nbsp; &nbsp;<?php echo htmlspecialchars($user['unique_name']); ?> &nbsp; &nbsp;&nbsp; &nbsp; <?php echo htmlspecialchars($user['time']); ?>
+                                        <span class="overlay-name"><?php echo htmlspecialchars($user['name']); ?></span>&nbsp;&nbsp; &nbsp;@<?php echo htmlspecialchars($user['unique_name']); ?> &nbsp;&nbsp; &nbsp; .<?php echo htmlspecialchars($user['time']); ?>
                                         <div class="overlay-details">
                                             <?php echo htmlspecialchars($user['distance']); ?>&nbsp;
                                         </div>
