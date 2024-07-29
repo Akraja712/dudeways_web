@@ -1,0 +1,104 @@
+ /* Header styling */
+ body {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 70px; /* Add padding to prevent content overlap with fixed header */
+}
+
+.header {
+    position: fixed; /* Fix header at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: #fc5082;
+
+}
+
+.card-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.logo-text-container {
+    padding: 10px; /* Adjust padding as needed */
+}
+.overlay-name {
+    font-weight: bold;
+}
+
+.overlay-details {
+    color: gray;
+    font-size: 10px;
+}
+
+.card-img-top {
+    width: 100%; /* Ensures the image fills the card width */
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensures the image maintains aspect ratio and covers the entire area */
+    margin-top: -10px; /* Adjust this value as needed */
+}
+
+.btn-custom {
+    flex: 1;
+    min-width: 120px; /* Minimum width for the buttons */
+    margin: 15px;
+    padding: 10px;
+    border: 2px solid #fc5082;
+    border-radius: 0;
+}
+
+.btn-custom-primary {
+    background-color: #fc5082;
+    color: white;
+}
+
+.btn-custom-secondary {
+    background-color: white;
+    color: black;
+}
+
+/* Button styles */
+.btn-group-custom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-customs {
+    flex: 1;
+    margin-right: -5px; /* Space between buttons */
+    margin-top:10px;
+}
+
+.btn-customs:last-child {
+    margin-right: 0; /* Remove margin from the last button */
+}
+@media (max-width: 576px) {
+    .btn-custom {
+        min-width: 100px; /* Adjust width for smaller screens if needed */
+    }
+}
