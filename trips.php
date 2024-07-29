@@ -105,7 +105,7 @@ curl_close($curl);
                                 <div class="d-flex align-items-center mb-3 logo-text-container">
                                     <img src="<?php echo htmlspecialchars($user['profile']); ?>" alt="Logo" class="card-logo">
                                     <div>
-                                        <span class="overlay-name"><?php echo htmlspecialchars($user['name']); ?></span>&nbsp;&nbsp; &nbsp;@<?php echo htmlspecialchars($user['unique_name']); ?> &nbsp;&nbsp; &nbsp; .<?php echo htmlspecialchars($user['time']); ?>
+                                        <span class="overlay-name"><?php echo htmlspecialchars($user['name']); ?></span>&nbsp;&nbsp; &nbsp;@<?php echo htmlspecialchars($user['unique_name']); ?> &nbsp;&nbsp;.<?php echo htmlspecialchars($user['time']); ?>
                                         <div class="overlay-details">
                                             <?php echo htmlspecialchars($user['distance']); ?>&nbsp;
                                         </div>
