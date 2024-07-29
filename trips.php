@@ -2,25 +2,15 @@
 define('DOMAIN_URL', 'https://dudeweb.graymatterworks.com/');
 define('API_URL', 'https://dudeways.com/api/');
 
-// Retrieve user_id and type from the URL
-$user_id = isset($_GET['user_id']) ? $_GET['user_id'] : null;
-$type = isset($_GET['type']) ? $_GET['type'] : null;
-
-// Check if user_id is set
-if (!$user_id) {
-    header("Location: trips.php");
-    exit();
-}
-
-// Prepare the data to be sent to the API
-$data = array(
-    "user_id" => $user_id,
-    "type" => $type // Pass the type parameter from the URL
-);
-
-$apiUrl = API_URL . "trip_list";
+$apiUrl = API_URL . "recent_trip";
 
 $curl = curl_init($apiUrl);
+
+// Define $data as an empty array
+$data = [];
+
+// Optional: If you're using POST and need to send data, you can use json_encode($data)
+// curl_setopt($curl, CURLOPT_POSTFIELDS, json_encode($data));
 
 curl_setopt($curl, CURLOPT_POST, true);
 curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
@@ -52,6 +42,7 @@ if ($response === false) {
 
 curl_close($curl);
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
