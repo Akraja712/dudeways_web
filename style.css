@@ -125,4 +125,13 @@
     .user-info {
         font-size: 15px; /* Adjust font size for smaller screens */
       }
+      .user-info .overlay-name {
+        margin-right: 20px; /* Space between name and unique_name */
+        font-weight: bold;
+      }
+      
+      .user-info .username {
+        margin-right: 20px; /* Space between unique_name and time */
+        color: #666;
+      }
     }
