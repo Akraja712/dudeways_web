@@ -117,12 +117,12 @@ curl_close($curl);
                                     </div>
                                 </div>
                                 <img class="card-img-top" src="<?php echo htmlspecialchars($user['trip_image']); ?>" alt="Card image cap">
-                                <div class="d-flex align-items-center mb-3" style="margin-top:8px;">
+                                <div class="d-flex align-items-center mb-3" style="margin-top:8px; margin-left:8px;">
                                     <img src="assets/images/location_ic.png" alt="Logo" style="width:22px;">
                                     <p class="ml-1 mb-0" style="font-size:13px;"><?php echo htmlspecialchars($user['location']); ?></p>
                                 </div>
-                                <p class="card-text" style="font-weight:bold; margin-top:-10px;font-size:13px;"><?php echo htmlspecialchars($user['trip_type']); ?></p>
-                                <div class="d-flex align-items-center mb-2">
+                                <p class="card-text" style="font-weight:bold;margin-left:10px; margin-top:-10px;font-size:13px;"><?php echo htmlspecialchars($user['trip_type']); ?></p>
+                                <div class="d-flex align-items-center mb-2" style="margin-left:10px;">
                                     <img src="assets/images/date_ic.png" alt="Date Icon" style="width:22px;">
                                     <p class="ml-1 mb-0" style="font-size:13px;">
                                         <?php echo htmlspecialchars($user['from_date']); ?> <a href="#" style="color:blue; text-decoration:underline;">more...</a>
