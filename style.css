@@ -97,8 +97,32 @@
 .btn-customs:last-child {
     margin-right: 0; /* Remove margin from the last button */
 }
+.user-info {
+    display: flex;
+    align-items: center; /* Vertically center the items */
+    flex-wrap: nowrap; /* Prevent items from wrapping to the next line */
+  }
+  
+  .user-info .overlay-name {
+    margin-right: 10px; /* Space between name and unique_name */
+    font-weight: bold;
+  }
+  
+  .user-info .username {
+    margin-right: 20px; /* Space between unique_name and time */
+    color: #666;
+  }
+  
+  .user-info .time {
+    color: #999;
+  }
+  
+  
 @media (max-width: 576px) {
     .btn-custom {
         min-width: 100px; /* Adjust width for smaller screens if needed */
     }
-}
+    .user-info {
+        font-size: 15px; /* Adjust font size for smaller screens */
+      }
+    }
